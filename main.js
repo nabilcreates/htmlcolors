@@ -42,7 +42,7 @@ var app = new Vue({
                     console.log(rgba)
 
                     this.history.push(rgba)
-
+                    
                 }
 
                 
