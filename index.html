@@ -11,12 +11,18 @@
 
     <div class="app">
 
-        <input type="text" v-model="input">
-        <h1>{{input}}</h1>
-        <button @click="updateColor()">Update</button>
+                <input type="text" v-model="input">
+                <button @click="updateColor(input)">Update</button>
+
+        <ul>
+            <li v-for='color in history' @click='updateColor(color)'>
+                {{color}}
+            </li>
+        </ul>
         
     </div>
     
+    <script src="jquery.js"></script>
     <script src="vue.js"></script>
     <script src="main.js"></script>
 </body>
