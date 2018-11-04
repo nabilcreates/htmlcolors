@@ -15,7 +15,7 @@
                 <button @click="updateColor(input)">Update</button>
 
         <ul>
-            <li v-for='color in history' @click='updateColor(color)'>
+            <li v-for='(color,i) in history' @click='updateColorHistory(history[i])'>
                 {{color}}
             </li>
         </ul>

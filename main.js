@@ -50,12 +50,12 @@ var app = new Vue({
                 this.input = "Wrong!"
             }
 
+        },
 
+        updateColorHistory(color){
 
+            $("body").css("background-color", color)
             
-
-
-
         }
     }
 })
