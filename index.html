@@ -15,16 +15,15 @@
 
         <h1>syntax: r-g-b[-a]</h1>
         <h3>[a] is optional</h3>
-        
+
         <input type="text" v-model="input">
         <button @click="updateColor(input)">Update</button>
 
         <ul>
-            <li v-for='(color,i) in history' @click='updateColorHistory(history[i])'>
+            <li v-for='(color,i) in history' @click='updateColorHistory(color)'>
                 {{color}}
             </li>
         </ul>
-
     </div>
 
     <script src="jquery.js"></script>
