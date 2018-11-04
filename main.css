@@ -1,0 +1,19 @@
+body{
+    font-family: 'Helvetica';
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background: white;
+    display: inline-block;
+}
+
+li{
+    padding: 20px 0;
+}
+
+li:nth-of-type(2n){
+    background-color: whitesmoke;
+}

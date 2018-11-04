@@ -12,11 +12,16 @@
 <body>
 
     <div class="app">
-        <input type="text" v-model="input">
-        <button @click="updateColor(input)">Update</button>
+        <h1>Available HTML Colors</h1>
 
+        <h3>Current Color: {{currentcolor.toLowerCase()}}</h3>
+        
+        <input type="text" v-model="search">
+
+        <br>
+        
         <ul>
-            <li v-for='(color,i) in history' @click='updateColor(color)'>{{color}}</li>
+            <li v-for='(color,i) in filteredCss_colors' @click="updateColor(color)">{{color.toLowerCase()}}</li>
         </ul>
     </div>
 
