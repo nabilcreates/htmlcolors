@@ -25,16 +25,24 @@ var app = new Vue({
                     $("body").css("background-color", rgb)
 
                     console.log(rgb)
+
+                    this.history.push(rgb)
                     
                 }
                 
                 if(colorsplit.length == 4){
 
-                    var rgba = 'rgba(' + colorsplit[0] + ',' + colorsplit[1] + ',' + colorsplit[2] + ',' + colorsplit[3] + ')'
+                    //  MAX VALUE FOR A IS 100 SO WE MUST INPUT IN THE JQUERY CSS AS < 1, SO WE DIVIDE BY 100. SO IF A IS 50, THE JQUERY CSS WILL READ AS 0.5
+                    var a = colorsplit[3]/100
+                    
+                    var rgba = 'rgba(' + colorsplit[0] + ',' + colorsplit[1] + ',' + colorsplit[2] + ',' + a + ')'
                     
                     $("body").css("background-color", rgba)
 
                     console.log(rgba)
+
+                    this.history.push(rgba)
+
                 }
 
                 
