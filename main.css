@@ -1,13 +1,25 @@
 body{
     font-family: 'Helvetica';
+    width: 60vw;
+    margin: auto;
+}
+
+input{
+    text-align: center;
+    width: calc(100% - 4px);
+    height: 30px;
 }
 
 ul{
+    text-align: center;
     list-style: none;
     margin: 0;
     padding: 0;
     background: white;
-    display: inline-block;
+}
+
+.colorname:hover{
+    cursor: pointer;
 }
 
 li{
